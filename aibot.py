@@ -1,7 +1,6 @@
 import streamlit as st
-st.write("Hello! I am your AI chatbot.")
-st.write("You can ask me about: hi, name, college, course, python, time, weather, thanks, help, bye")
-
+st.chat_message("AI",avatar="aibot.png").write("Hello! I am your AI chatbot.")
+st.chat_message("AI",avatar="aibot.png").write("You can ask me about: hi, name, college, course, python, time, weather, thanks, help, bye")
 command=st.chat_input("Enter your command")
 if command:
 	st.chat_message("User",avatar="user.png").write(command)
